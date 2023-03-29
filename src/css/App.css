@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #555;
+  }
+  
+  .todo-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .todo-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .todo-form input[type="datetime-local"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .todo-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo-item h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .todo-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .todo-item button {
+    border: none;
+    background-color: transparent;
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .todo-item.completed {
+    opacity: 0.5;
+  }
+  
+  .todo-filter {
+    margin-bottom: 20px;
+  }
+  
+  .todo-filter button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .todo-filter .active {
+    background-color: #4CAF50;
+  }
+  
+  .todo-filter .active:hover {
+    background-color: #3e8e41;
+  }
+  
+  .todo-filter button:hover:not(.active) {
+    background-color: #ddd;
+    color: #555;
+  }
+  
+  .todo-search {
+    margin-bottom: 20px;
+  }
+  
+  .todo-search input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .todo-search button {
+    padding: 10px;
+  }
+.todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .todo-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .todo-item .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+  }
+  
+  .todo-item .deadline {
+    font-size: 14px;
+    color: #999;
+    margin: 0 0 0 10px;
+  }
+  
+  .todo-item .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-item .actions > * {
+    margin-left: 10px;
+  }
+  
+  .todo-item .actions .delete-btn {
+    color: #f00;
+    cursor: pointer;
+  }
+  
+  .todo-item.completed {
+    background-color: #f9f9f9;
+  }
+  
+  .todo-item.completed .title {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  /* TodoForm */
+  .todo-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .todo-form input[type="text"],
+  .todo-form input[type="datetime-local"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .todo-form button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00a8ff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* TodoFilter */
+  .todo-filter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-filter label {
+    margin-right: 10px;
+  }
+  
+  .todo-filter select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
