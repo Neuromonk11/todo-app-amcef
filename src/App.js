@@ -89,7 +89,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>odo List</h1>
+      <h1>Todo List</h1>
       <TodoForm addTodo={addTodo} />
       <TodoFilter filter={filter} setFilter={setFilter} />
       <TodoList
